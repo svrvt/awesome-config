@@ -8,10 +8,13 @@ local hostname = io.popen("uname -n"):read()
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
-if hostname == "pcRU" then
+if hostname == "aldebaran" then
 	theme.font = "Roboto Mono Nerd Font 16"
 	theme.taglist_font = "awesomewm-font 16"
 elseif hostname == "vaio" then
+	theme.font = "Roboto Mono Nerd Font 12"
+	theme.taglist_font = "awesomewm-font 12"
+else
 	theme.font = "Roboto Mono Nerd Font 12"
 	theme.taglist_font = "awesomewm-font 12"
 end
