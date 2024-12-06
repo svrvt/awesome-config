@@ -26,6 +26,7 @@ local volume_widget = require("awesome-wm-widgets.volume-widget.volume")
 -- local github_contributions_widget = require("awesome-wm-widgets.github-contributions-widget.github-contributions-widget")
 -- local ram_widget = require("awesome-wm-widgets.ram-widget.ram-widget")
 local word_clock = require("awesome-wm-widgets.word-clock-widget.word-clock")
+local batteryarc_widget = require("awesome-wm-widgets.batteryarc-widget.batteryarc")
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
 local WB = wibox_package
@@ -79,6 +80,7 @@ function WB.add_widgets_right(s)
 		--     -- number_of_containers = 5
 		-- },
 		-- connman, -- <- connman widget
+		batteryarc_widget(),
 		volume_widget({
 			--https://pavelmakhov.com/awesome-wm-widgets/
 			--horizontal_bar, vertical_bar, icon,icon_and_text, arc
