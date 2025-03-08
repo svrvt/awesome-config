@@ -13,7 +13,7 @@ end
 
 ImaGes = "still"
 if hostname == "pcRU" or "vaio" then
-	ImaGes = "down"
+	ImaGes = "unladyes"
 end
 
 run_once("feh --bg-fill --randomize ~/mount/yandex/wallpapers/" .. ImaGes)
